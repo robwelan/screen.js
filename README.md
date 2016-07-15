@@ -10,21 +10,21 @@ An HTML5 Web Hybrid Mobile App Framework using a non-traditional approach
   
 ##HTML:
   ###Basic Screen
-  ...
-  <body>
-    <screen>
-      <screen-header>
-        <p>Your Header</p>
-      </screen-header>
-      <screen-content>
-        <p>Content goes here.</p>
-      </screen-content>
-      <screen-footer>
-        <p>The footer</p>
-      </screen-footer>
-    </screen>
-  </body>
-  ...
+      ...
+      <body>
+        <screen>
+          <screen-header>
+            <p>Your Header</p>
+          </screen-header>
+          <screen-content>
+            <p>Content goes here.</p>
+          </screen-content>
+          <screen-footer>
+            <p>The footer</p>
+          </screen-footer>
+        </screen>
+      </body>
+      ...
   
   ###Navigation Buttons
    Recommended for your <screen-footer> or <screen-header>
