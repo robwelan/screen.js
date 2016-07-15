@@ -38,13 +38,17 @@ We'll talk about the ```forceRestart()``` item in the JavaScript section further
    
 ##CSS
 
-```.screen-width-XX```
+    .screen-width-XX
 
 where XX is a number. The options are 100, 50, 33, 25, and 20. This item is best coupled with the .nav-buttons <div> class.
-  .nav-buttons
-    useful to create a button or buttons in your navigation bar. Horizontally. No more than 5 buttons on your nav bar in a row.
-  .vertical-align-content
-    to force the vertical alignment of your content. It might work. It might not. Give it a go. The framework you are using may have a vertical alignment class by-the-way (use that first, then try this one, and you're still experiencing a fail, build your own for your situation in your custom css file.
+
+    .nav-buttons
+
+useful to create a button or buttons in your navigation bar. Horizontally. No more than 5 buttons on your nav bar in a row.
+
+    .vertical-align-content
+
+to force the vertical alignment of your content. It might work. It might not. Give it a go. The framework you are using may have a vertical alignment class by-the-way (use that first, then try this one, and you're still experiencing a fail, build your own for your situation in your custom css file.
   
 ##JavaScript
   Creates a Window Object called 'sfs'.
