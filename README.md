@@ -51,10 +51,10 @@ useful to create a button or buttons in your navigation bar. Horizontally. No mo
 to force the vertical alignment of your content. It might work. It might not. Give it a go. The framework you are using may have a vertical alignment class by-the-way (use that first, then try this one, and you're still experiencing a fail, build your own for your situation in your custom css file.
   
 ##JavaScript
-  Creates a Window Object called 'sfs'.
+Screen creates a Window Object called <em>STS</em>
   
-  ###sfs.preloader
-    Defaults to '#pre-loader'. You can create a <screen id="pre-loader">, and Screen will launch with that preloader. Keep reading for 'how'.
+###sfs.preloader
+ Defaults to '#pre-loader'. You can create a <screen id="pre-loader">, and Screen will launch with that preloader. Keep reading for 'how'.
   ###sfs.home
     Defaults to "#home". You need to create a <screen id="home">. Otherwise, no screen will load in your interface.
   ###sfs.autoLaunch(pre-loader)
