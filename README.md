@@ -28,16 +28,16 @@ An HTML5 Web Hybrid Mobile App Framework using a non-traditional approach
       
 ###Navigation Buttons
 Recommended for your ```<screen-footer>``` or ```<screen-header>```
-    <div class="nav-buttons">
-      <a class="screen-width-100" href="javascript:window.sfs.forceRestart();"><i class="material-icons">refresh</i></a>
-      <div class="clear"></div>
-    </div>
+     <div class="nav-buttons">
+       <a class="screen-width-100" href="javascript:window.sfs.forceRestart();"><i class="material-icons">refresh</i></a>
+       <div class="clear"></div>
+     </div>
   
-   We'll talk about the forceRestart() item in the JavaScript section further below.
+We'll talk about the ```forceRestart()``` item in the JavaScript section further below.
    
 ##CSS
- .screen-width-XX
-    where XX is a number. The options are 100, 50, 33, 25, and 20. This item is best coupled with the .nav-buttons <div> class.
+```.screen-width-XX```
+where XX is a number. The options are 100, 50, 33, 25, and 20. This item is best coupled with the .nav-buttons <div> class.
   .nav-buttons
     useful to create a button or buttons in your navigation bar. Horizontally. No more than 5 buttons on your nav bar in a row.
   .vertical-align-content
