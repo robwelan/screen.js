@@ -67,12 +67,13 @@ JSON is optional. An example of use:
 
     {"no-network": true, "no-geolocation": false}
 
-You will need to build code to create your JSON. If a variable is **true**, your App will be directed to load the screen with the ID to the left of it. In the case above, your App should load the <screen id="no-network">.
-      If you have a double-whammy, the first **true** option will load (only). Yeah, if there are multiple errors generated, it could take your user a while to work through the error screens that are generated.
+You will need to build code to create your JSON. If a variable is **true**, your App will be directed to load the screen with the ID to the left of it. In the case above, your App should load the ```<screen id="no-network">```.
+
+If you have a double-whammy, the first **true** option will load (only). Yeah, if there are multiple errors generated, it could take your user a while to work through the error screens that are generated.
       
-      If an error is generated, it's recommended providing a button with the action of 'window.sfs.forceRestart()'.
+If an error is generated, it's recommended providing a button with the action of 'window.sfs.forceRestart()'.
       
-      If no JSON is provided, or, no **true** variables are found in the JSON ojbect, Screen will load your <screen id="home"> page.
+If no JSON is provided, or, no **true** variables are found in the JSON ojbect, Screen will load your <screen id="home"> page.
       
-  ###sfs.changePage(id)
-    Used to navigate to a new page. When you use this command, Screen will load <screen id="id"> (where id is whatever you called your screen).
+###sfs.changePage(id)
+Used to navigate to a new page. When you use this command, Screen will load ```<screen id="id">``` (where id is whatever you called your screen).
