@@ -1,0 +1,71 @@
+/*  COPYRIGHT 2012-2016 Robert Michael Welan */
+screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  flex-direction: column;
+  display: flex;
+  display: none;
+}
+screen-header {
+  background: black;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+screen-content {
+  flex: 1;
+  overflow-y:auto;
+}
+screen-footer {
+  background: black;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.vertical-align-content {
+  height: 100vh;
+  max-height: 100vh;
+  min-width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* UI Components */
+.screen-width-100 {
+  width: 100vw;
+  max-width: 100vw;
+}
+.screen-width-33 {
+  width: 33.333vw;
+  max-width: 33.333vw;
+}
+
+.nav-buttons a {
+    display: block;
+    float: left;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.nav-buttons a {
+    margin-right: 0;
+}
+
+.nav-buttons a:active {
+  /*  http://stackoverflow.com/questions/5135019/css-opacity-only-to-background-color-not-the-text-on-it  */
+  -khtml-opacity:.50;
+-moz-opacity:.50;
+-ms-filter:”alpha(opacity=50)”;
+filter:alpha(opacity=50);
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);
+opacity:.50;
+}
+
+.clearsssssss {
+    clear: both;
+}
