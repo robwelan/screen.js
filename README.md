@@ -51,20 +51,23 @@ useful to create a button or buttons in your navigation bar. Horizontally. No mo
 to force the vertical alignment of your content. It might work. It might not. Give it a go. The framework you are using may have a vertical alignment class by-the-way (use that first, then try this one, and you're still experiencing a fail, build your own for your situation in your custom css file.
   
 ##JavaScript
-Screen creates a Window Object called ##STS##
+Screen creates a Window Object called <strong>sts</strong>.
   
 ###sfs.preloader
 Defaults to <strong>#pre-loader</strong>. You can create a ```<screen id="pre-loader">```, and Screen will launch with that preloader. Keep reading for 'how'.
 
 ###sfs.home
-Defaults to "#home". You need to create a <screen id="home">. Otherwise, no screen will load in your interface.
+Defaults to <strong>#home</strong>. You need to create a ```<screen id="home">```. Otherwise, no screen will load in your interface.
 
-  ###sfs.autoLaunch(pre-loader)
-    Set 'pre-loader' to **true** if you want the pre-loader to launch first. Otherwise set to **false** if you want to launch directly to the home page. You may need to put this command into a window.setTimeout in order to allow the device to initialize enough. PhoneGap can be funny.
-  ###sfs.start(JSON)
-    JSON is optional. An example of use:
-      {"no-network": true, "no-geolocation": false}
-      You will need to build code to create your JSON. If a variable is **true**, your App will be directed to load the screen with the ID to the left of it. In the case above, your App should load the <screen id="no-network">.
+###sfs.autoLaunch(pre-loader)
+Set 'pre-loader' to **true** if you want the pre-loader to launch first. Otherwise set to **false** if you want to launch directly to the home page. You may need to put this command into a window.setTimeout in order to allow the device to initialize enough. PhoneGap can be funny.
+
+###sfs.start(JSON)
+JSON is optional. An example of use:
+
+    {"no-network": true, "no-geolocation": false}
+
+You will need to build code to create your JSON. If a variable is **true**, your App will be directed to load the screen with the ID to the left of it. In the case above, your App should load the <screen id="no-network">.
       If you have a double-whammy, the first **true** option will load (only). Yeah, if there are multiple errors generated, it could take your user a while to work through the error screens that are generated.
       
       If an error is generated, it's recommended providing a button with the action of 'window.sfs.forceRestart()'.
