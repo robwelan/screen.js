@@ -27,7 +27,7 @@ An HTML5 Web Hybrid Mobile App Framework using a non-traditional approach
       </body>
       
 ###Navigation Buttons
-Recommended for your <screen-footer> or <screen-header>
+Recommended for your ```<screen-footer>``` or ```<screen-header>```
     <div class="nav-buttons">
       <a class="screen-width-100" href="javascript:window.sfs.forceRestart();"><i class="material-icons">refresh</i></a>
       <div class="clear"></div>
