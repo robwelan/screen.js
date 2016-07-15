@@ -39,7 +39,6 @@ Recommended for your ```<screen-footer>``` or ```<screen-header>```
 We'll talk about the ```forceRestart()``` item in the JavaScript section further below.
    
 ##CSS
-
 ```.screen-width-XX```
 
 where XX is a number. The options are 100, 50, 33, 25, and 20. This item is best coupled with the ```.nav-buttons``` ```<div>``` class.
