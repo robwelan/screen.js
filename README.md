@@ -73,7 +73,7 @@ If you have a double-whammy, the first **true** option will load (only). Yeah, i
       
 If an error is generated, it's recommended providing a button with the action of 'window.sfs.forceRestart()'.
       
-If no JSON is provided, or, no **true** variables are found in the JSON ojbect, Screen will load your <screen id="home"> page.
+If no JSON is provided, or, no **true** variables are found in the JSON ojbect, Screen will load your ```<screen id="home">``` page.
       
 ###sfs.changePage(id)
 Used to navigate to a new page. When you use this command, Screen will load ```<screen id="id">``` (where id is whatever you called your screen).
