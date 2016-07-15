@@ -40,11 +40,11 @@ We'll talk about the ```forceRestart()``` item in the JavaScript section further
    
 ##CSS
 
-    .screen-width-XX
+```.screen-width-XX```
 
-where XX is a number. The options are 100, 50, 33, 25, and 20. This item is best coupled with the .nav-buttons <div> class.
+where XX is a number. The options are 100, 50, 33, 25, and 20. This item is best coupled with the ```.nav-buttons``` ```<div>``` class.
 
-    .nav-buttons
+```.nav-buttons```
 
 useful to create a button or buttons in your navigation bar. Horizontally. No more than 5 buttons on your nav bar in a row.
 
