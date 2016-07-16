@@ -58,6 +58,7 @@ function SCREEN_FRAME_SET () {
   this.forceRestart = function () {
     window.location.reload(true);
   };
+
 //
 } //  SCREEN_FRAME_SET
 
@@ -73,3 +74,21 @@ function returnFormattedID (s) {
   }
   return s;
 }
+
+/*  Special Navigation Functions */
+$(document).ready(function () {
+  $('.sfs-on-click').click(function () {
+    var id = $(this).attr('href');
+
+    switch (id) {
+      case '#':
+        /* DO NOTHING */
+        break;
+      case '#sfs-restart': case 'sfs-restart':
+        window.sfs.forceRestart();
+        break;
+      default:
+        window.sfs.changePage(id);
+    }
+  }); /* .sfs-on-click... */
+}); /* document.ready... */
