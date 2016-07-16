@@ -18,7 +18,8 @@ screen-header {
 }
 screen-content {
   flex: 1;
-  overflow-y:auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 screen-footer {
   background: black;
