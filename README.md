@@ -15,7 +15,7 @@ Screen uses flex box.
 ###Basic Screen
       
       <body>
-        <screen>
+        <screen id="home">
           <screen-header>
             <p>Your Header</p>
           </screen-header>
