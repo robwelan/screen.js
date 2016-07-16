@@ -32,11 +32,11 @@ Screen uses flex box.
 Recommended for your ```<screen-footer>``` or ```<screen-header>```
 
       <div class="nav-buttons">
-        <a class="screen-width-100" href="javascript:window.sfs.forceRestart();"><i class="material-icons">refresh</i></a>
+        <a class="screen-width-100 sfs-on-click" href="#sfs-restart"><i class="material-icons">refresh</i></a>
         <div class="clear"></div>
       </div>
   
-We'll talk about the ```forceRestart()``` item in the JavaScript section further below.
+We'll talk about the ```#sfs-restart``` item in the JavaScript section further below.
    
 ##CSS
 <strong>.screen-width-XX</strong>
@@ -71,7 +71,7 @@ You will need to build code to create your JSON. If a variable is **true**, your
 
 If you have a double-whammy, the first **true** option will load (only). Yeah, if there are multiple errors generated, it could take your user a while to work through the error screens that are generated.
       
-If an error is generated, it's recommended providing a button with the action of ```window.sfs.forceRestart()```.
+If an error is generated, it's recommended providing a button with a ```class=sfs-on-click``` and a href of ```#sfs-restart```.
       
 If no JSON is provided, or, no **true** variables are found in the JSON ojbect, Screen will load your ```<screen id="home">``` page.
       
