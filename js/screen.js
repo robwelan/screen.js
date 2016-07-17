@@ -4,7 +4,7 @@
 })(window);
 
 function SCREEN_FRAME_SET () {
-//
+  //
   this.make_visible_class = 'visible-screen';
   this.preloader = '#pre-loader';
   this.home = '#home';
@@ -32,7 +32,7 @@ function SCREEN_FRAME_SET () {
     var goToPage = this.home; //  set to default home page for now...
 
     if (sJ !== null && typeof sJ === 'object') {
-    //  window.alert(JSON.stringify(sJ))
+      //  window.alert(JSON.stringify(sJ))
       $.each(sJ, function (gs, bolCheck) {
         if (bolCheck === false && !breakLoop) {
           goToPage = gs;
@@ -59,7 +59,7 @@ function SCREEN_FRAME_SET () {
     window.location.reload(true);
   };
 
-//
+  //
 } //  SCREEN_FRAME_SET
 
 function returnFormattedClass (s) {
@@ -77,12 +77,14 @@ function returnFormattedID (s) {
 
 /*  Special Navigation Functions */
 $(document).ready(function () {
-  $('.sfs-on-click').click(function () {
+  /* http://stackoverflow.com/questions/30057551/jquery-click-event-not-working-on-mobile-device */
+  $('.sfs-on-click').click(function (e) {
+    e.preventDefault();
     var id = $(this).attr('href');
 
     switch (id) {
       case '#':
-        /* DO NOTHING */
+      /* DO NOTHING */
         break;
       case '#sfs-restart': case 'sfs-restart':
         window.sfs.forceRestart();
