@@ -71,7 +71,7 @@ You will need to build code to create your JSON. If a variable is **true**, your
 
 If you have a double-whammy, the first **true** option will load (only). Yeah, if there are multiple errors generated, it could take your user a while to work through the error screens that are generated.
       
-If an error is generated, it's recommended providing a button with a ```class="sfs-on-click"``` and a href of ```"#sfs-restart"```. Or an action that makes sense in the context of your app's functionality.
+If an error is generated, it's recommended providing a button with a ```class="sfs-on-click"``` and a ```href="#sfs-restart"```. Or an action that makes sense in the context of your app's functionality.
       
 If no JSON is provided, or, no **true** variables are found in the JSON ojbect, Screen will load your ```<screen id="home">``` page.
       
