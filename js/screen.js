@@ -53,12 +53,27 @@ function SCREEN_FRAME_SET () {
     $(id).show();
     $(id).addClass(this.make_visible_class);
     $(id).css({'display': 'flex'}); // resize flex to screen, or else the user interface will be wonky now...
+    $(id).scrollTop(0);
+  };
+
+  this.isVisible = function (id) {
+    var result = false;
+    var vs = this.getIDOfVisibleScreen();
+    vs = returnFormattedID(vs);
+    id = returnFormattedID(id);
+    if (id === vs) {
+      result = true;
+    }
+    return result;
   };
 
   this.forceRestart = function () {
     window.location.reload(true);
   };
 
+  this.returnVisibleClass = function () {
+    return returnFormattedClass(this.make_visible_class);
+  };
   //
 } //  SCREEN_FRAME_SET
 
@@ -94,3 +109,4 @@ $(document).ready(function () {
     }
   }); /* .sfs-on-click... */
 }); /* document.ready... */
+//
