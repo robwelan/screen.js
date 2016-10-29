@@ -32,7 +32,6 @@ function SCREEN_FRAME_SET () {
     var goToPage = this.home; //  set to default home page for now...
 
     if (sJ !== null && typeof sJ === 'object') {
-      //  window.alert(JSON.stringify(sJ))
       $.each(sJ, function (gs, bolCheck) {
         if (bolCheck === false && !breakLoop) {
           goToPage = gs;
@@ -40,6 +39,7 @@ function SCREEN_FRAME_SET () {
         }
       });
     }
+    $(goToPage).addClass(this.make_visible_class);
     this.changePage(goToPage);
     this.has_launched = true;
   };
