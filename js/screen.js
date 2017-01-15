@@ -1,4 +1,4 @@
-/*  COPYRIGHT 2012-2016 Robert Michael Welan */
+/*  COPYRIGHT 2012-2017 Robert Michael Welan */
 (function (w) {
   w.sfs = new SCREEN_FRAME_SET();
 })(window);
